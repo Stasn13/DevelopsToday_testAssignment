@@ -4,7 +4,6 @@ import * as Actions from '../actions/postById';
 import * as Types from '../constants/postById';
 
 function* getPostById(action) {
-    console.log(action);
     try {
         const response = yield api.get(`/posts/${action.payload}`, {
             params: {
