@@ -12,6 +12,7 @@ const postById = (state = initialState, action) => {
             return {
                 ...state,
                 loader: true,
+                error: false,
             };
         case Types.SUCCESS_BY_ID:
             return {

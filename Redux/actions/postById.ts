@@ -2,7 +2,7 @@ import * as Types from '../constants/postById';
 
 export const fetchById = (id) => ({
     type: Types.FETCH_BY_ID,
-    id,
+    payload: id,
 });
 
 export const successById = (post) => ({
